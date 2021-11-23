@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .sb {
+            float: right;
+            margin-left: 400px;
+        }
+
+        form.form-inline button {
+            float: right;
+            margin-left: 200px;
+        }
+
+        .navbar {
+            font-size: 20pt;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container.fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"></a>
+                <img src="../media/logo.png" alt="" width="90px" height="50px">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="bai2.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="heroes.html">Heroes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Game.html">Game</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                News
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="meganews.html">Mega news</a>
+                                <a class="dropdown-item" href="leaguenews.html">League news</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="sb">
+                        <form class="form-inline">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+            <h1
+                style="border-bottom: solid 5px black; position: absolute; margin-left: 500px; width: 300px; font-style: italic; font-size: 40pt; font-family: fantasy; text-align: center;;">
+                HEROES</h1>
+        </div>
+        <br>
+        <div class="row" style="margin-top: 300px; text-align: center; width: 100%;">
+
+            <div class="btn-group dropup" style="margin-top: 50px; margin-left: 200px; width: 400px; height: 50px;">
+                <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    ASSASSINS
+                </button>
+                <div class="dropdown-menu" style=" border: none; width: 350px; text-align: justify;">
+                    These are heroes that are designed to deal large amounts of damage quickly, and often do not have
+                    much health. Assassins often search for the enemy marksman or mage as well as any other fragile
+                    heroes to eliminate quickly. They are also responsible for shutting down enemies that are on a
+                    killing spree. They have high mobility and burst damage for focusing valuable enemy targets.
+
+                </div>
+            </div>
+
+            <div class="btn-group dropup" style=" width: 400px; height: 50px;">
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    MARKSMEN
+                </button>
+                <div class="dropdown-menu" style=" border: none; width: 350px; text-align: justify;">
+                    Also known as "AD Carry/ADC", marksmen are ranged heroes that usually deal physical damage mostly
+                    through their auto attack. This hero type deals sustained damage, and therefore are useful in
+                    teamfights in order to reduce opponent's health. They are also very efficient in taking objectives
+                    such as turrets. However, they are often fragile and vulnerable.
+
+                </div>
+            </div>
+
+            <div class="btn-group dropup" style="margin-top: -50px; margin-left: 1000px; width: 400px; height: 50px;">
+                <button type="button" class="btn btn-outline-danger dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    TANK
+                </button>
+                <div class="dropdown-menu" style=" border: none; width: 350px; text-align: justify;">
+                    Tanks are heroes that have large amounts of HP and usually build completely defensive to be able to
+                    soak damage for the team. As a result, they often deal little damage. However, they often have
+                    abilities known as 'crowd control' that allow them to inhibit the movement of the enemy team. In
+                    addition to this, they can use these abilities to initiate a teamfight, or to prevent the enemy team
+                    from attacking high priority targets such as an ally marksman or mage
+
+                </div>
+            </div>
+
+            <h2
+                style="border:inset 7px; font-style: oblique; font-family: inherit; width: 400px; height:100px; font-size: 30pt; padding: 10px 10px 10px ; margin-top: 70px; margin-left: 600px;">
+                POSITIONS
+            </h2>
+
+            <br>
+
+            <div class="dropdown" style="margin-top: 100px; margin-left: 50px; ">
+                <button class="btn btn-outline-warning dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="width: 380px; height: 50px;">
+                    WARRIOR
+                </button>
+                <div class="dropdown-menu" style=" width: 370px; border: none;text-align: justify">
+                    Heroes that blend the attributes of damage dealer and tank, combining moderate survivability with
+                    respectable damage. Warriors usually have a balanced amount of health, defense, and attack damage,
+                    which is a common designation for close-range melee duelist. Thus, they able to survive long periods
+                    of fighting and excel in doing continuous sustain damage. Warriors are all-rounded and tend to be
+                    extremely strong in 1v1 scenarios.
+                </div>
+            </div>
+
+            <div class="dropdown" style="margin-top: -100px; margin-left: 450px; ">
+                <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="width: 370px; height: 50px;">
+                    SUPPORT
+                </button>
+                <div class="dropdown-menu" style=" width: 370px; border: none; text-align: justify">
+                    Heroes whose abilities aid the rest of the team by providing healing, buffing allies (such as
+                    movement speed buffs), debuffing the enemy team (such as stunning), or a combination of the above.
+                    Support heroes are often paired with the marksman in the early laning phase of the game where the
+                    support doesn't kill minions but instead focuses on aiding their partner and harassing the enemy
+                    heroes. Support heroes usually aid ally marksman as they are often weaker during the early phase of
+                    the game and need assistance in order to survive.
+                </div>
+            </div>
+
+            <div class="dropdown" style="margin-top: -100px; margin-left: -350px; ">
+                <button class="btn btn-outline-dark dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false" style="width: 370px; height: 50px;">
+                    MAGE
+                </button>
+                <div class="dropdown-menu" style=" width: 370px; border: none; text-align: justify">
+                    Mages are sometimes known as "AP Carry/APC". These heroes deal high amount of burst magic damage.
+                    Some mages are fragile while some mages are more durable depending on the respective itemization.
+                    Mages are a mix of ranged heroes, which deal damage from afar, or melee heroes, which deal damage
+                    from close distances. Examples of mages are Lauriel, Liliana, and Tulen.
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="margin-top: 200px;">
+            <h1
+                style=" border-bottom: solid 5px black; font-size: 30pt; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; width:400px ; margin-left: 600px;">
+                MEET SOME HEROES</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../media/pic22.jpg" alt="" width="400px">
+            </div>
+            <div class="col-md-4">
+                <img src="../media/pic23.jpg" alt="" width="400px">
+            </div>
+            <div class="col-md-4">
+                <img src="../media/pic24.jpg" alt="" width="400px">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 50px; margin-left: 100px;">
+            <div class="col-md-4">
+                <img src="../media/pic25.jpg" alt="" width="400px">
+            </div>
+            <div class="col-md-4">
+                <img src="../media/pic26.jpg" alt="" width="400px">
+            </div>
+            <div class="col-md-4">
+                <img src="../media/pic27.jpg" alt="" width="400px">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
