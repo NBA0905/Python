@@ -41,13 +41,13 @@ def login_with_get_method(ps: str, un: str ):
 def login_with_post_method(ps: str, un: str ):
     return{"login":{"username":un,"password":ps }}
     
-    @app.get("/send_mail")
-    def send_email_for_client(receiver: str, content: str, subject: str):
-        status = MAIL.send_mail(receiver,content,subject)
-        if status:
-            return{"receiver": receiver, "sent": status}
-        else:
-            return{"sent": status}
+@app.get("/send_mail")
+def send_email_for_client(receiver: str, content: str, subject: str):
+    status = MAIL.send_mail(receiver,content,subject)
+    if status:
+        return{"receiver": receiver, "sent": status}
+    else:
+        return{"sent": status}
 
 # @app.get("/form")
 # def get_demo_form(form:)
