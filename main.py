@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, File, UploadFile
 from features import MAIL
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -8,7 +8,7 @@ import aiofiles
 #khoi tao web app
 app = FastAPI()
 
-# static file
+# static file directory registry
 app.mount("/media", StaticFiles(directory = "media"), name = "media")
 app.mount("/tabs", StaticFiles(directory = "tabs"), name = "tabs")
 
@@ -59,3 +59,14 @@ def get_demo_template(request: Request):
 @app.get("/game")
 def get_game(request: Request):
     return game.TemplateResponse("Bai2.html",  {"request": request})
+
+@app.post("/Files")
+async def upload_file(upload_file: UploadFile = File(...)):
+    file_name = upload_file.filename
+    file_path = f"media/{file_name}"
+    async with aiofiles.open(file_path, "wb") as file_handler:
+        content = upload_file.read();
+        file_handler.write(content)
+
+    return{"status":True}
+

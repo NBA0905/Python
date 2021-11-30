@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Majestic Night</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    
+   
+        <header>
+            <a href="#" class="logo">BAN</a>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#sec">About</a></li>
+                <li><a href="https://www.google.com/">Work</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" alt="" id="stars">
+            <img src="moon.png" alt="" id="moon" style="margin-left: -270px; margin-top: -100px;">
+            <img src="mountain_left.png" alt="" id="mountain_left"  width="55%" style="margin: 0px -40px">
+            <h2 id="text">Majestic Night</h2>
+            
+            <a href="https://www.lofi.cafe/" id="btn" target="_blank" rel="noopener noreferrer">Play</a>
+            <img src="mountain_right.png" alt="" id="mountain_right"  width="55%"
+                style="margin: 0px 750px ">
+
+        </section>
+
+        <div class="about" id="sec">
+            <h2>About Us</h2>
+            <p>Greetings! We are BAN - a group of developers and designers hoping to make your websites activities
+                become more a lively and exciting. We create and design backgrounds as well as websites and many more
+                items to lighten up your browsing experience</p>
+            <p>What you are seeing right now is one of our model - the parallel scrolling screen. As you scroll the
+                screen up and down, the sceneric background and letters move with you. In case you want to use the web
+                just click "Work" to access google, and if you click "Play" the web will play you the playlist that
+                suits the atmosphere of the background. </p>
+            <p>Thank you so much for using our product and please continue to support us.</p>
+            <p>Hope you have a wonderful experience!</p>
+        </div>
+
+        <script>
+         
+            const stars = document.getElementById('stars');
+            const moon = document.getElementById('moon');
+            const mountain_left = document.getElementById('mountain_left');
+            const text = document.getElementById('text');
+            const btn = document.getElementById('btn');
+            const mountain_right = document.getElementById('mountain_right');
+
+            window.addEventListener('scroll', function(){
+                const value = window.scrollY;
+                stars.style.marginLeft = value * 1 + 'px';
+                moon.style.top = value * 1 + 'px';
+                mountain_left.style.bottom = value * 1 + 'px';
+                mountain_right.style.bottom = value * 1 + 'px';
+                text.style.right = value * 4 + 'px';
+                
+            })
+        </script>
+    
+
+</body>
+
+</html>
