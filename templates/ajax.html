@@ -7,7 +7,7 @@
     $(document).ready(function () {
       $("button").click(function () {
         $.ajax({
-          url: "http://127.0.0.1:8000/", success: function (result) {
+          url: "https://demoappz-python.herokuapp.com/", success: function (result) {
             $("#div1").html(result);
           }
         });
