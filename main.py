@@ -14,12 +14,14 @@ app.mount("/tabs", StaticFiles(directory = "tabs"), name = "tabs")
 
 templates = Jinja2Templates(directory="templates")
 game = Jinja2Templates(directory="K2-Proj")
+
 #Xay dung api dau tien
 #root
 @app.get("/")
 def get_root():
-    return{'data': 'this is root dir'}
+    # return{'data': 'this is root dir'}
     #json
+    return "this is root" 
 
 
 @app.get("/home")
@@ -49,8 +51,9 @@ def send_email_for_client(receiver: str, content: str, subject: str):
     else:
         return{"sent": status}
 
-# @app.get("/form")
-# def get_demo_form(form:)
+@app.get("/form")
+def get_demo_form(request: Request):
+     return templates.TemplateResponse("ajax.html", {"request": request})
 
 @app.get("/template")
 def get_demo_template(request: Request):
